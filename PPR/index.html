@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGRI GROW - Innovating Today For A Sustainable Tomorrow | Smart Farming Solutions</title>
+  <meta name="description" content="Anti combines technology, data, and expertise to help farmers increase yield, reduce waste, and build a better future with precision agriculture and AI crop monitoring.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+      <!-- Navigation Header -->
+      <header class="site-header" id="siteHeader">
+        <div class="container nav-container">
+          <a href="index.html" class="brand-logo" aria-label="Anti Homepage">
+            <span class="logo-icon-wrap">
+              <img src="/IMAGES/logo.png" alt="AGRIGROW">
+            </span>
+            <span class="brand-name">AGRI GROW</span>
+          </a>
+
+          <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+              <li class="nav-item dropdown">
+                <a href="services.html" class="nav-link">
+                  Services
+                  <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="services.html#precision">Precision Farming</a></li>
+                  <li><a href="services.html#irrigation">Smart Irrigation</a></li>
+                  <li><a href="services.html#crop-monitoring">AI Crop Monitoring</a></li>
+                  <li><a href="services.html#sustainable">Sustainable Solutions</a></li>
+                  <li><a href="services.html#consulting">Expert Consultation</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="solutions.html" class="nav-link">
+                  Solutions
+                  <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="solutions.html#drone">Drone Monitoring</a></li>
+                  <li><a href="solutions.html#iot">IoT Field Sensors</a></li>
+                  <li><a href="solutions.html#platform">Farm Management Platform</a></li>
+                  <li><a href="solutions.html#robotics">Robotics & Automation</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a href="resources.html" class="nav-link">
+                  Resources
+                  <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="resources.html#articles">Blog & Articles</a></li>
+                  <li><a href="resources.html#case-studies">Case Studies</a></li>
+                  <li><a href="resources.html#guides">Guides & Whitepapers</a></li>
+                  <li><a href="resources.html#newsletter">Newsletter</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-actions">
+            <button class="icon-circle-btn search-trigger" id="searchBtn" aria-label="Search">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+            <a href="contact.html" class="btn btn-primary btn-pill">Get Started</a>
+            
+            <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+          <div class="container hero-container">
+            <div class="hero-content">
+              <div class="section-badge">
+                <span class="badge-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 22V12M12 12C12 7.02944 7.97056 3 3 3C3 7.97056 7.02944 12 12 12ZM12 12C12 7.02944 16.0294 3 21 3C21 7.97056 16.0294 12 12 12Z"/>
+                  </svg>
+                </span>
+                <span class="badge-text">Smart Farming Solutions</span>
+              </div>
+
+              <h1 class="hero-title">
+                Innovating Today<br>
+                For  A Sustainable<br>
+                <span class="text-green">Tomorrow</span>
+              </h1>
+
+              <p class="hero-description">
+                We combine technology, data, and expertise to help farmers increase yield, reduce waste, and build a better future.
+              </p>
+
+              <div class="hero-cta-group">
+                <a href="solutions.html" class="btn btn-primary btn-pill">Explore Solutions</a>
+                <button class="btn btn-outline btn-pill video-trigger" id="heroVideoTrigger" aria-label="Watch Video">
+                  <span class="play-circle-icon">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                  </span>
+                  <span>Watch Video</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-media-wrapper">
+              <div class="hero-image-card">
+                <img 
+                  src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=1200&auto=format&fit=crop" 
+                  alt="Modern agronomist and farmer inspecting lush agricultural field with digital tablet and tractor" 
+                  class="hero-img"
+                  loading="eager">
+                <div class="hero-img-gradient-overlay"></div>
+                
+                <div class="glass-card crop-health-card">
+                  <div class="card-header-small">
+                    <span class="card-label">Crop Health</span>
+                  </div>
+                  <div class="stat-highlight">
+                    <span class="stat-value">98%</span>
+                    <span class="stat-subbadge">Healthy</span>
+                  </div>
+                  <div class="sparkline-container">
+                    <svg class="sparkline-svg" viewBox="0 0 120 40" fill="none">
+                      <path d="M0 32 Q 25 30, 45 22 T 85 10 T 120 6" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M0 32 Q 25 30, 45 22 T 85 10 T 120 6 L 120 40 L 0 40 Z" fill="url(#sparklineGrad)" opacity="0.25"/>
+                      <defs>
+                        <linearGradient id="sparklineGrad" x1="0" y1="0" x2="0" y2="40" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#22C55E" stop-opacity="0.8"/>
+                          <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="growth-indicator">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+                    <span>12% this week</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container hero-feature-bar-container">
+            <div class="feature-bar-card">
+              <a href="services.html#precision" class="feature-bar-item feature-link">
+                <div class="feature-icon-box bg-green">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    <path d="M7 8l-3 4 3 4M17 8l3 4-3 4"></path>
+                  </svg>
+                </div>
+                <div class="feature-bar-text">
+                  <h2 class="feature-title">Precision Farming</h2>
+                  <p class="feature-desc">Data-driven insights for healthier crops.</p>
+                </div>
+              </a>
+
+              <a href="services.html#irrigation" class="feature-bar-item feature-link">
+                <div class="feature-icon-box bg-blue">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                  </svg>
+                </div>
+                <div class="feature-bar-text">
+                  <h2 class="feature-title">Smart Irrigation</h2>
+                  <p class="feature-desc">Optimize water usage and reduce waste.</p>
+                </div>
+              </a>
+
+              <a href="services.html#crop-monitoring" class="feature-bar-item feature-link">
+                <div class="feature-icon-box bg-purple">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="feature-bar-text">
+                  <h2 class="feature-title">AI Crop Monitoring</h2>
+                  <p class="feature-desc">Real-time monitoring for better decisions.</p>
+                </div>
+              </a>
+
+              <a href="services.html#sustainable" class="feature-bar-item feature-link">
+                <div class="feature-icon-box bg-emerald">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                  </svg>
+                </div>
+                <div class="feature-bar-text">
+                  <h2 class="feature-title">Sustainable Solutions</h2>
+                  <p class="feature-desc">Eco-friendly practices for a greener planet.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- STATS COUNTER ROW -->
+        <section class="stats-section" id="stats">
+          <div class="container">
+            <div class="stats-grid">
+              <div class="stat-col">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Smart Devices Deployed</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-col">
+                <div class="stat-number">2M+</div>
+                <div class="stat-label">Acres Monitored Worldwide</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-col">
+                <div class="stat-number">85%</div>
+                <div class="stat-label">Increase in Crop Efficiency</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-col">
+                <div class="stat-number">90%</div>
+                <div class="stat-label">Water Usage Optimized</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+          <div class="container about-grid">
+            <div class="about-content">
+              <div class="section-badge">
+                <span class="badge-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 22V12M12 12C12 7.02944 7.97056 3 3 3C3 7.97056 7.02944 12 12 12ZM12 12C12 7.02944 16.0294 3 21 3C21 7.97056 16.0294 12 12 12Z"/>
+                  </svg>
+                </span>
+                <span class="badge-text">About AGRI GROW</span>
+              </div>
+
+              <h2 class="section-title">
+                Technology<br>
+                Rooted In<br>
+                <span class="text-green">Agriculture</span>
+              </h2>
+
+              <p class="section-text">
+                At Agri Grow, we empower farmers with innovative tools and  <br> actionable data to improve productivity, profitability, and sustainability.
+              </p>
+
+              <ul class="checklist">
+                <li class="checklist-item">
+                  <span class="check-icon">✓</span>
+                  <span>Real-time field analytics</span>
+                </li>
+                <li class="checklist-item">
+                  <span class="check-icon">✓</span>
+                  <span>AI-powered crop insights</span>
+                </li>
+                <li class="checklist-item">
+                  <span class="check-icon">✓</span>
+                  <span>End-to-end farm management</span>
+                </li>
+              </ul>
+
+              <div class="about-action">
+                <a href="about.html" class="btn btn-primary btn-pill btn-with-arrow">
+                  <span>Learn More About Us</span>
+                  <span class="btn-arrow-circle">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="about-media-wrapper">
+              <div class="about-img-container">
+                <img 
+                  src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1000&auto=format&fit=crop" 
+                  alt="Farmer kneeling in lush green crop field examining soil analytics on tablet" 
+                  class="about-img"
+                  loading="lazy"
+                >
+                <div class="about-img-glow"></div>
+
+                <div class="telemetry-pill badge-soil">
+                  <div class="pill-icon-box bg-light-blue">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg>
+                  </div>
+                  <div class="pill-text-group">
+                    <span class="pill-sub">Soil Moisture</span>
+                    <span class="pill-main">Optimal</span>
+                  </div>
+                </div>
+
+                <div class="telemetry-pill badge-status">
+                  <div class="pill-icon-box bg-light-green">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                    </svg>
+                  </div>
+                  <div class="pill-text-group">
+                    <span class="pill-sub">Field Status</span>
+                    <span class="pill-main">Good</span>
+                  </div>
+                </div>
+
+                <div class="telemetry-pill badge-yield">
+                  <div class="pill-icon-box bg-light-chart">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="20" x2="18" y2="10"></line>
+                      <line x1="12" y1="20" x2="12" y2="4"></line>
+                      <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                  </div>
+                  <div class="pill-text-group">
+                    <span class="pill-sub">Yield Prediction</span>
+                    <span class="pill-main">4.2 Ton/Ha</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- OUR SOLUTIONS SECTION (4-Card Grid) -->
+        <section class="solutions-section" id="solutions">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-badge">
+                <span class="badge-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 22V12M12 12C12 7.02944 7.97056 3 3 3C3 7.97056 7.02944 12 12 12ZM12 12C12 7.02944 16.0294 3 21 3C21 7.97056 16.0294 12 12 12Z"/>
+                  </svg>
+                </span>
+                <span class="badge-text">Our Solutions</span>
+              </div>
+              <h2 class="section-title">
+                Smart Solutions<br>
+                For Modern <span class="text-green">Farming</span>
+              </h2>
+            </div>
+
+            <div class="solutions-grid">
+              <div class="solution-card">
+                <div class="card-thumb">
+                  <img 
+                    src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=800&auto=format&fit=crop" 
+                    alt="Agricultural drone surveying crop fields from the air"
+                    loading="lazy"
+                  >
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Drone Monitoring</h3>
+                  <p class="card-desc">High-resolution aerial insights for better field management.</p>
+                  <div class="card-action">
+                    <a href="solutions.html#drone" class="circle-arrow-btn" aria-label="Learn about Drone Monitoring">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="solution-card">
+                <div class="card-thumb">
+                  <img 
+                    src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" 
+                    alt="Solar-powered IoT field weather and soil sensor station in a green field"
+                    loading="lazy"
+                  >
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">IoT Field Sensors</h3>
+                  <p class="card-desc">Track soil, weather, and crop conditions in real-time.</p>
+                  <div class="card-action">
+                    <a href="solutions.html#iot" class="circle-arrow-btn" aria-label="Learn about IoT Field Sensors">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="solution-card">
+                <div class="card-thumb">
+                  <img 
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" 
+                    alt="Farm management digital platform software dashboard on modern laptop"
+                    loading="lazy"
+                  >
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Farm Management Platform</h3>
+                  <p class="card-desc">Manage your farm operations in one powerful dashboard.</p>
+                  <div class="card-action">
+                    <a href="solutions.html#platform" class="circle-arrow-btn" aria-label="Learn about Farm Management Platform">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="solution-card">
+                <div class="card-thumb">
+                  <img 
+                    src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=800&auto=format&fit=crop" 
+                    alt="Agronomist agricultural consultants providing expert guidance in the field"
+                    loading="lazy"
+                  >
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Expert Consultation</h3>
+                  <p class="card-desc">Get guidance from our agriculture experts whenever you need.</p>
+                  <div class="card-action">
+                    <a href="services.html#consulting" class="circle-arrow-btn" aria-label="Learn about Expert Consultation">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- RIGHT / SECONDARY CONTAINER -->
+    <div class="layout-column layout-right" id="layoutRight">
+
+      <!-- FROM DATA TO BETTER DECISIONS -->
+      <section class="data-decisions-section" id="data-decisions">
+        <div class="dark-feature-container">
+          <div class="dark-feature-content">
+            <h2 class="dark-feature-title">From Data To<br>Better Decisions</h2>
+            <p class="dark-feature-desc">
+              Real-time insights that help you make smarter farming decisions every time.
+            </p>
+            <ul class="dark-checklist">
+              <li>
+                <span class="dark-check-icon">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Real-time Data</span>
+              </li>
+              <li>
+                <span class="dark-check-icon">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Actionable Insights</span>
+              </li>
+              <li>
+                <span class="dark-check-icon">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Increase Productivity</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="phone-mockup-wrapper">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="phone-app-header">
+                  <span class="app-time">9:41</span>
+                  <div class="app-icons">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5h-2v-2h2zm0-4h-2V7h2z"/></svg>
+                  </div>
+                </div>
+                <div class="phone-app-content">
+                  <div class="app-title-bar">
+                    <span class="app-back">‹</span>
+                    <span class="app-screen-name">Field Overview</span>
+                    <span class="app-menu">⋮</span>
+                  </div>
+
+                  <div class="app-stat-banner">
+                    <div class="app-stat-mini">
+                      <span class="mini-label">Field Moisture</span>
+                      <span class="mini-val">68%</span>
+                    </div>
+                    <div class="app-stat-mini">
+                      <span class="mini-label">Zone pH</span>
+                      <span class="mini-val">6.4</span>
+                    </div>
+                  </div>
+
+                  <div class="phone-graph-card">
+                    <div class="graph-label">Daily Crop Telemetry</div>
+                    <svg class="phone-sparkline" viewBox="0 0 160 60" fill="none">
+                      <path d="M0 45 Q 30 50, 50 30 T 90 20 T 130 35 T 160 15" stroke="#4ADE80" stroke-width="2.5" stroke-linecap="round"/>
+                      <path d="M0 45 Q 30 50, 50 30 T 90 20 T 130 35 T 160 15 L 160 60 L 0 60 Z" fill="rgba(74, 222, 128, 0.15)"/>
+                      <circle cx="160" cy="15" r="3.5" fill="#4ADE80"/>
+                    </svg>
+                  </div>
+
+                  <div class="phone-item-list">
+                    <div class="phone-item-row">
+                      <span class="p-dot green"></span>
+                      <span class="p-label">North Sector Irrigation</span>
+                      <span class="p-status">Active</span>
+                    </div>
+                    <div class="phone-item-row">
+                      <span class="p-dot blue"></span>
+                      <span class="p-label">Soil Sensor Hub #04</span>
+                      <span class="p-status">Stable</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="phone-bottom-nav">
+                  <div class="nav-icon-mini active">●</div>
+                  <div class="nav-icon-mini">▦</div>
+                  <div class="nav-icon-mini">⚙</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-panorama-card">
+          <img 
+            src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200&auto=format&fit=crop" 
+            alt="Green agricultural tractor driving through wide crop farm under open sky" 
+            class="panorama-img"
+            loading="lazy"
+          >
+        </div>
+      </section>
+
+      <!-- POWERED BY INNOVATION -->
+      <section class="innovation-section" id="innovation">
+        <div class="container-sub">
+          <h2 class="sub-section-title">Powered By Innovation</h2>
+          <div class="innovation-grid">
+            <div class="innovation-card">
+              <div class="innovation-thumb">
+                <img 
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop" 
+                  alt="High tech computer vision and AI circuit interface for precision agriculture"
+                  loading="lazy"
+                >
+              </div>
+              <h3 class="innovation-title">AI & Machine Learning</h3>
+              <p class="innovation-desc">Predictive analytics for better outcomes.</p>
+            </div>
+
+            <div class="innovation-card">
+              <div class="innovation-thumb">
+                <img 
+                  src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?q=80&w=600&auto=format&fit=crop" 
+                  alt="Modern autonomous smart tractor equipment operating in agricultural field"
+                  loading="lazy"
+                >
+              </div>
+              <h3 class="innovation-title">Automation</h3>
+              <p class="innovation-desc">Smart automation for efficient and easy farming.</p>
+            </div>
+
+            <div class="innovation-card">
+              <div class="innovation-thumb">
+                <img 
+                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=600&auto=format&fit=crop" 
+                  alt="Agricultural harvesting robot working in crop field"
+                  loading="lazy"
+                >
+              </div>
+              <h3 class="innovation-title">Robotics</h3>
+              <p class="innovation-desc">Robotic solutions for modern farming.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUCCESS STORIES / TESTIMONIALS -->
+      <section class="testimonials-section" id="testimonials">
+        <div class="container-sub">
+          <div class="testimonial-box">
+            <div class="testimonial-header">
+              <h2 class="sub-section-title-white">Success Stories</h2>
+              <div class="carousel-nav-btns">
+                <button class="nav-arrow-btn" id="prevTestimonial" aria-label="Previous Testimonial">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <button class="nav-arrow-btn" id="nextTestimonial" aria-label="Next Testimonial">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="testimonial-slider" id="testimonialSlider">
+              <div class="testimonial-slide active" data-index="0">
+                <div class="quote-mark">“</div>
+                <p class="quote-text">
+                  Agri Grow solutions helped us increase our yield by 30% while reducing water usage significantly.
+                </p>
+                <div class="author-layout">
+                  <div class="author-info">
+                    <img 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" 
+                      alt="Ramesh Patel smiling outdoors" 
+                      class="author-avatar"
+                      loading="lazy"
+                    >
+                    <div class="author-meta">
+                      <h4 class="author-name">Ramesh Patel</h4>
+                      <p class="author-role">Farm Owner</p>
+                    </div>
+                  </div>
+                  <div class="author-full-photo">
+                    <img 
+                      src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop" 
+                      alt="Farmer standing proudly in field" 
+                      class="author-portrait"
+                      loading="lazy"
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide" data-index="1">
+                <div class="quote-mark">“</div>
+                <p class="quote-text">
+                  The automated IoT sensors and drone diagnostics saved us hundreds of hours and cut fertilizer costs by 25%.
+                </p>
+                <div class="author-layout">
+                  <div class="author-info">
+                    <img 
+                      src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" 
+                      alt="Sarah Jenkins" 
+                      class="author-avatar"
+                      loading="lazy"
+                    >
+                    <div class="author-meta">
+                      <h4 class="author-name">Sarah Jenkins</h4>
+                      <p class="author-role">Agricultural Director</p>
+                    </div>
+                  </div>
+                  <div class="author-full-photo">
+                    <img 
+                      src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop" 
+                      alt="Sarah Jenkins in orchard" 
+                      class="author-portrait"
+                      loading="lazy"
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR TECHNOLOGY IN ACTION -->
+      <section class="tech-action-section" id="tech-action">
+        <div class="container-sub">
+          <h2 class="sub-section-title">Our Technology<br>In Action</h2>
+          
+          <div class="video-preview-card video-trigger" id="actionVideoTrigger">
+            <img 
+              src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop" 
+              alt="Lush green expansive agriculture fields at sunrise" 
+              class="video-thumb-img"
+              loading="lazy"
+            >
+            <div class="video-overlay">
+              <button class="big-play-btn" aria-label="Play Technology In Action Video">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="tech-stats-row">
+            <div class="t-stat">
+              <span class="t-val">120K+</span>
+              <span class="t-lbl">Trees Covered</span>
+            </div>
+            <div class="t-stat">
+              <span class="t-val">200+</span>
+              <span class="t-lbl">Farms Empowered</span>
+            </div>
+            <div class="t-stat">
+              <span class="t-val">15+</span>
+              <span class="t-lbl">Countries</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWS & INSIGHTS -->
+      <section class="news-section" id="news">
+        <div class="container-sub">
+          <div class="d-flex-between mb-3">
+            <h2 class="sub-section-title mb-0">News & Insights</h2>
+            <a href="resources.html" class="read-more-link font-semibold">View All Resources →</a>
+          </div>
+          <div class="news-grid">
+            <article class="news-card">
+              <div class="news-thumb">
+                <img 
+                  src="https://images.unsplash.com/photo-1527842891421-42eec6e703ea?q=80&w=600&auto=format&fit=crop" 
+                  alt="Tractor tilling fertile earth at sunrise" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="news-body">
+                <h3 class="news-title">5 Ways Technology Is Changing Farming</h3>
+                <a href="resources.html#articles" class="read-more-link">
+                  <span>Read More</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <div class="news-thumb">
+                <img 
+                  src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?q=80&w=600&auto=format&fit=crop" 
+                  alt="Modern indoor precision greenhouse agriculture" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="news-body">
+                <h3 class="news-title">Benefits of Precision Agriculture</h3>
+                <a href="resources.html#articles" class="read-more-link">
+                  <span>Read More</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <div class="news-thumb">
+                <img 
+                  src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=600&auto=format&fit=crop" 
+                  alt="Eco-friendly solar powered farm fields in golden daylight" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="news-body">
+                <h3 class="news-title">Sustainable Farming for the Future</h3>
+                <a href="resources.html#articles" class="read-more-link">
+                  <span>Read More</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="cta-section" id="cta">
+        <div class="container-sub">
+          <div class="cta-card">
+            <div class="cta-leaf-pattern">
+              <svg width="180" height="180" viewBox="0 0 200 200" fill="none" opacity="0.12">
+                <path d="M100 20C60 20 20 60 20 100C20 140 60 180 100 180C140 180 180 140 180 100C180 60 140 20 100 20Z" stroke="currentColor" stroke-width="8"/>
+                <path d="M100 20V180M20 100H180" stroke="currentColor" stroke-width="6"/>
+                <circle cx="100" cy="100" r="50" stroke="currentColor" stroke-width="6"/>
+              </svg>
+            </div>
+            <div class="cta-content">
+              <h2 class="cta-title">Ready To Transform<br>Your Farming?</h2>
+              <p class="cta-desc">
+                Join thousands of farmers who are already growing smarter.
+              </p>
+              <a href="contact.html" class="btn btn-cta-dark btn-pill">
+                <span>Get Started Today</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer" id="contact">
+        <div class="container-sub footer-inner">
+          <div class="footer-grid">
+            <div class="footer-col brand-col">
+              <a href="index.html" class="brand-logo footer-brand">
+                <span class="logo-icon-wrap">
+                 <img src="/IMAGES/logo.png" alt="AGRIGROW">
+                </span>
+                <span class="brand-name">AGRIGROW</span>
+              </a>
+              <p class="footer-tagline">
+                Smart farming solutions for a sustainable tomorrow.
+              </p>
+              <div class="social-icons">
+                <a href="#" class="social-btn" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                <a href="#" class="social-btn" aria-label="Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 1-2-2 2 2 0 0 1 2 2z"/></svg></a>
+                <a href="#" class="social-btn" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></a>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <h4 class="footer-heading">Quick Links</h4>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4 class="footer-heading">Resources</h4>
+              <ul class="footer-links">
+                <li><a href="resources.html#articles">Blog</a></li>
+                <li><a href="resources.html#case-studies">Case Studies</a></li>
+                <li><a href="resources.html#guides">Guides</a></li>
+                <li><a href="contact.html">Support</a></li>
+                <li><a href="contact.html#faq">FAQs</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4 class="footer-heading">Contact Us</h4>
+              <ul class="footer-contact">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>+1 (234) 567-8900</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>info@antiagri.com</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>123 Green Field Road, Agri City, AG 12345</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="copyright">© 2024 Agri Grow. All rights reserved.</p>
+            <div class="legal-links">
+              <a href="#">Privacy Policy</a>
+              <span class="legal-divider">|</span>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Video Modal Popup -->
+  <div class="modal-backdrop" id="videoModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close Video Modal">×</button>
+      <div class="video-responsive-frame">
+        <iframe 
+          id="modalIframe"
+          src="" 
+          title="Smart Farming Overview Video" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Modal Popup -->
+  <div class="modal-backdrop" id="searchModal">
+    <div class="modal-content search-modal-content">
+      <button class="modal-close" id="searchCloseBtn" aria-label="Close Search Modal">×</button>
+      <div class="search-input-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" placeholder="Search crops, solutions, sensors, insights..." autofocus>
+      </div>
+      <div class="search-suggestions">
+        <span>Popular:</span>
+        <a href="solutions.html#drone" class="suggestion-tag">Drone Monitoring</a>
+        <a href="services.html#irrigation" class="suggestion-tag">Soil Moisture</a>
+        <a href="solutions.html#iot" class="suggestion-tag">IoT Weather Hub</a>
+        <a href="about.html" class="suggestion-tag">Our Team</a>
+        <a href="contact.html" class="suggestion-tag">Contact Us</a>
+      </div>
+    </div>
+  </div>
+ </body>
+</html>

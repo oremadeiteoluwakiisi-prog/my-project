@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Anti | Smart Agriculture & Precision Farming Services</title>
+  <meta name="description" content="Explore Anti's precision agriculture services, smart irrigation management, AI crop monitoring, and expert agronomy consultation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Anti Homepage">
+        <span class="logo-icon-wrap">
+            <img src="/IMAGES/logo.png" alt="AGRIGROW">
+        </span>
+        <span class="brand-name">AGRIGROW</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="services.html" class="nav-link active">
+              Services
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html#precision">Precision Farming</a></li>
+              <li><a href="services.html#irrigation">Smart Irrigation</a></li>
+              <li><a href="services.html#crop-monitoring">AI Crop Monitoring</a></li>
+              <li><a href="services.html#sustainable">Sustainable Solutions</a></li>
+              <li><a href="services.html#consulting">Expert Consultation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="solutions.html" class="nav-link">
+              Solutions
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="solutions.html#drone">Drone Monitoring</a></li>
+              <li><a href="solutions.html#iot">IoT Field Sensors</a></li>
+              <li><a href="solutions.html#platform">Farm Management Platform</a></li>
+              <li><a href="solutions.html#robotics">Robotics & Automation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a href="resources.html" class="nav-link">
+              Resources
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="resources.html#articles">Blog & Articles</a></li>
+              <li><a href="resources.html#case-studies">Case Studies</a></li>
+              <li><a href="resources.html#guides">Guides & Whitepapers</a></li>
+              <li><a href="resources.html#newsletter">Newsletter</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-circle-btn search-trigger" id="searchBtn" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <a href="contact.html" class="btn btn-primary btn-pill">Get Started</a>
+        
+        <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="bc-sep">/</span>
+          <span>Services</span>
+        </div>
+        <div class="section-badge">
+          <span class="badge-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 22V12M12 12C12 7.02944 7.97056 3 3 3C3 7.97056 7.02944 12 12 12ZM12 12C12 7.02944 16.0294 3 21 3C21 7.97056 16.0294 12 12 12Z"/>
+            </svg>
+          </span>
+          <span class="badge-text">Our Agricultural Services</span>
+        </div>
+        <h1 class="page-hero-title">
+          Empowering Modern Farms With<br>
+          <span class="text-green">Next-Generation Services</span>
+        </h1>
+        <p class="page-hero-desc">
+          We combine cutting-edge hardware, computer vision AI, and certified agronomy expertise to provide comprehensive field services that maximize yields, eliminate water waste, and foster eco-friendly agriculture.
+        </p>
+      </div>
+    </section>
+
+    <!-- CORE SERVICES OVERVIEW -->
+    <section class="services-list-section">
+      <div class="container">
+        
+        <!-- Service 1: Precision Farming -->
+        <div class="service-detail-card" id="precision">
+          <div class="service-detail-content">
+            <div class="feature-icon-box bg-green mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                <path d="M7 8l-3 4 3 4M17 8l3 4-3 4"></path>
+              </svg>
+            </div>
+            <h2 class="service-item-title">Precision Farming & Soil Mapping</h2>
+            <p class="service-item-desc">
+              Harness high-density soil electrical conductivity scanning, multi-depth nutrient analysis, and geospatial variability mapping to apply inputs with millimeter precision.
+            </p>
+            <ul class="checklist mb-4">
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Variable-rate fertilizer & seeding prescriptions</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>High-resolution 3D topography and drainage models</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Up to 28% reduction in chemical fertilizer application</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-pill">Request Soil Survey</a>
+          </div>
+          <div class="service-detail-image">
+            <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=800&auto=format&fit=crop" alt="Precision farming specialist working in soil" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Service 2: Smart Irrigation -->
+        <div class="service-detail-card reverse" id="irrigation">
+          <div class="service-detail-content">
+            <div class="feature-icon-box bg-blue mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <h2 class="service-item-title">Smart Irrigation & Water Management</h2>
+            <p class="service-item-desc">
+              Automate and optimize every drop of water based on real-time transpiration rates, evapotranspiration models, and continuous soil tension readings.
+            </p>
+            <ul class="checklist mb-4">
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Automated valve actuators integrated with weather radar</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Subsurface drip and pivot optimization algorithms</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Water savings exceeding 35% without yield compromise</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-pill">Schedule Irrigation Audit</a>
+          </div>
+          <div class="service-detail-image">
+            <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=800&auto=format&fit=crop" alt="Smart irrigation sensor in farm field" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Service 3: AI Crop Monitoring -->
+        <div class="service-detail-card" id="crop-monitoring">
+          <div class="service-detail-content">
+            <div class="feature-icon-box bg-purple mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h2 class="service-item-title">AI Crop Monitoring & Disease Detection</h2>
+            <p class="service-item-desc">
+              Leverage autonomous multispectral imaging to diagnose fungal infections, nitrogen deficiencies, and insect infestations up to 14 days before visible symptoms appear.
+            </p>
+            <ul class="checklist mb-4">
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>NDVI, NDRE, and thermal canopy stress indexing</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Instant automated field alerts dispatched to your mobile phone</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Over 98% accuracy in crop stress classification</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-pill">Start AI Monitoring</a>
+          </div>
+          <div class="service-detail-image">
+            <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=800&auto=format&fit=crop" alt="AI crop monitoring drone surveying field" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Service 4: Sustainable Solutions -->
+        <div class="service-detail-card reverse" id="sustainable">
+          <div class="service-detail-content">
+            <div class="feature-icon-box bg-emerald mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+              </svg>
+            </div>
+            <h2 class="service-item-title">Sustainable Solutions & Carbon Accounting</h2>
+            <p class="service-item-desc">
+              Transition seamlessly to regenerative farming techniques, verify soil carbon sequestration, and generate certified carbon credits for additional revenue streams.
+            </p>
+            <ul class="checklist mb-4">
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>MRV-certified soil carbon verification protocols</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Biodiversity and pollinator habitat mapping</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Eco-compliance reporting for global market export</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-pill">Explore Carbon Programs</a>
+          </div>
+          <div class="service-detail-image">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=800&auto=format&fit=crop" alt="Lush eco farm field with sustainable energy" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Service 5: Expert Agronomy Consultation -->
+        <div class="service-detail-card" id="consulting">
+          <div class="service-detail-content">
+            <div class="feature-icon-box bg-green mb-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h2 class="service-item-title">Certified Agronomist Consultation</h2>
+            <p class="service-item-desc">
+              Connect directly with specialized crop scientists, plant pathologists, and agricultural engineers for seasonal crop planning, soil amendment recipes, and continuous guidance.
+            </p>
+            <ul class="checklist mb-4">
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Dedicated agronomist assigned to your farm territory</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Weekly video briefings and scheduled on-site inspections</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">✓</span>
+                <span>Custom crop rotation and pest resistance strategies</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-pill">Book an Agronomist</a>
+          </div>
+          <div class="service-detail-image">
+            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=800&auto=format&fit=crop" alt="Agronomists consulting on field" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4-STEP SERVICE DELIVERY PROCESS -->
+    <section class="process-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge mx-auto">
+            <span class="badge-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 22V12M12 12C12 7.02944 7.97056 3 3 3C3 7.97056 7.02944 12 12 12ZM12 12C12 7.02944 16.0294 3 21 3C21 7.97056 16.0294 12 12 12Z"/>
+              </svg>
+            </span>
+            <span class="badge-text">How We Deliver</span>
+          </div>
+          <h2 class="section-title">Our 4-Step Field Implementation Process</h2>
+          <p class="section-text mx-auto" style="max-width: 600px;">
+            From baseline setup to seasonal harvest, our turnkey methodology ensures zero downtime and rapid return on investment.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-step-num">01</div>
+            <h3 class="process-step-title">Initial Farm Audit</h3>
+            <p class="process-step-desc">We scan your topography, sample soil zones, and evaluate existing machinery and irrigation infrastructure.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-step-num">02</div>
+            <h3 class="process-step-title">Sensor & IoT Deployment</h3>
+            <p class="process-step-desc">Our field engineers install solar telemetry stations, wireless soil probes, and calibrate drone docking hubs.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-step-num">03</div>
+            <h3 class="process-step-title">AI Calibration & Live Feeds</h3>
+            <p class="process-step-desc">Your farm digital twin comes online within 48 hours, streaming real-time moisture, canopy health, and weather feeds.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-step-num">04</div>
+            <h3 class="process-step-title">Continuous Optimization</h3>
+            <p class="process-step-desc">Our agronomists adjust prescriptions weekly to maximize yield weight while lowering input costs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-leaf-pattern">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" opacity="0.15">
+              <path d="M100 20C60 20 20 60 20 100C20 140 60 180 100 180C140 180 180 140 180 100C180 60 140 20 100 20Z" stroke="currentColor" stroke-width="8"/>
+              <path d="M100 20V180M20 100H180" stroke="currentColor" stroke-width="6"/>
+              <circle cx="100" cy="100" r="50" stroke="currentColor" stroke-width="6"/>
+            </svg>
+          </div>
+          <div class="cta-content">
+            <h2 class="cta-title">Ready To Upgrade Your<br>Farm's Operations?</h2>
+            <p class="cta-desc">
+              Schedule a free 30-minute consultation with our senior agronomy team to identify the best services for your fields.
+            </p>
+            <a href="contact.html" class="btn btn-cta-dark btn-pill">
+              <span>Book A Service Discovery Call</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-brand">
+            <span class="logo-icon-wrap">
+                <img src="/IMAGES/logo.png" alt="AGRIGROW">
+            </span>
+            <span class="brand-name">AGRIGROW</span>
+          </a>
+          <p class="footer-tagline">
+            Smart farming solutions for a sustainable tomorrow.
+          </p>
+          <div class="social-icons">
+            <a href="#" class="social-btn" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 1-2-2 2 2 0 0 1 2 2z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="resources.html#articles">Blog</a></li>
+            <li><a href="resources.html#case-studies">Case Studies</a></li>
+            <li><a href="resources.html#guides">Guides</a></li>
+            <li><a href="contact.html">Support</a></li>
+            <li><a href="contact.html#faq">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+1 (234) 567-8900</span>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>info@antiagri.com</span>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>123 Green Field Road, Agri City, AG 12345</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2024 Agri Grow. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="legal-divider">|</span>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal Popup -->
+  <div class="modal-backdrop" id="searchModal">
+    <div class="modal-content search-modal-content">
+      <button class="modal-close" id="searchCloseBtn" aria-label="Close Search Modal">×</button>
+      <div class="search-input-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" placeholder="Search services, solutions, sensors, insights..." autofocus>
+      </div>
+      <div class="search-suggestions">
+        <span>Popular:</span>
+        <a href="services.html#precision" class="suggestion-tag">Precision Soil Mapping</a>
+        <a href="services.html#irrigation" class="suggestion-tag">Smart Irrigation</a>
+        <a href="services.html#crop-monitoring" class="suggestion-tag">AI Crop Monitoring</a>
+        <a href="contact.html" class="suggestion-tag">Book Consultation</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
