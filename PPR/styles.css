@@ -154,97 +154,6 @@ ul, ol {
 }
 
 /* ==========================================================================
-   View Mode Switcher (Unified Web View vs 2-Column Showcase View)
-   ========================================================================== */
-
-.view-bar {
-  background-color: #0A1C12;
-  color: #E2E8F0;
-  font-size: 0.825rem;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.view-bar-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.view-pill-group {
-  display: flex;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 3px;
-  border-radius: var(--radius-full);
-}
-
-.view-btn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 14px;
-  border-radius: var(--radius-full);
-  color: #CBD5E1;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: all var(--transition-fast);
-}
-
-.view-btn.active {
-  background-color: var(--accent-green);
-  color: #FFFFFF;
-  font-weight: 600;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.view-btn:hover:not(.active) {
-  color: #FFFFFF;
-}
-
-.view-hint span {
-  color: #94A3B8;
-  font-size: 0.775rem;
-}
-
-/* 2-Column Showcase Presentation Layout Mode */
-.app-layout-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  transition: all var(--transition-normal);
-}
-
-body.showcase-mode .app-layout-wrapper {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  max-width: 1480px;
-  margin: 24px auto;
-  gap: 28px;
-  padding: 0 20px;
-}
-
-body.showcase-mode .layout-column {
-  background: var(--surface-card);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
-  border: 1px solid var(--neutral-200);
-  overflow: hidden;
-}
-
-body.showcase-mode .layout-right {
-  padding-top: 24px;
-}
-
-body.showcase-mode .site-header {
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-}
-
-/* ==========================================================================
    Buttons & Badges
    ========================================================================== */
 
@@ -395,11 +304,18 @@ body.showcase-mode .site-header {
 }
 
 .logo-icon-wrap {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo-icon-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 .logo-icon {
@@ -573,8 +489,8 @@ body.showcase-mode .site-header {
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 44px;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -620,40 +536,44 @@ body.showcase-mode .site-header {
 }
 
 .hero-image-card {
+  width: 100%;
+  height: 460px;
   position: relative;
-  border-radius: var(--radius-lg);
-  overflow: visible;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 
 .hero-img {
   width: 100%;
-  height: 420px;
+  height: 100%;
   object-fit: cover;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
+  object-position: center;
+  display: block;
+  border-radius: var(--radius-xl);
 }
 
 .hero-img-gradient-overlay {
   position: absolute;
   inset: 0;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(10, 28, 18, 0.4) 100%);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(180deg, rgba(0,0,0,0.02) 0%, rgba(10, 28, 18, 0.25) 100%);
   pointer-events: none;
 }
 
 /* Glass Card: Crop Health */
 .glass-card.crop-health-card {
   position: absolute;
-  top: -24px;
-  left: -28px;
-  background: rgba(255, 255, 255, 0.88);
+  top: 24px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.85);
   padding: 16px 20px;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-floating);
-  min-width: 190px;
+  min-width: 185px;
   z-index: 10;
   animation: floatSlow 4s ease-in-out infinite alternate;
 }
@@ -918,20 +838,20 @@ body.showcase-mode .site-header {
 }
 
 .badge-soil {
-  top: 24px;
-  left: -20px;
+  top: 20px;
+  left: 20px;
   animation: floatSlow 5s ease-in-out infinite alternate;
 }
 
 .badge-status {
-  top: 24px;
-  right: -20px;
+  top: 20px;
+  right: 20px;
   animation: floatSlow 4.5s ease-in-out infinite alternate-reverse;
 }
 
 .badge-yield {
-  bottom: 24px;
-  left: -20px;
+  bottom: 20px;
+  left: 20px;
   animation: floatSlow 5.5s ease-in-out infinite alternate;
 }
 

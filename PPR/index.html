@@ -3,23 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AGRI GROW - Innovating Today For A Sustainable Tomorrow | Smart Farming Solutions</title>
-  <meta name="description" content="Anti combines technology, data, and expertise to help farmers increase yield, reduce waste, and build a better future with precision agriculture and AI crop monitoring.">
+  <title>AGRIGROW - Innovating Today For A Sustainable Tomorrow | Smart Farming Solutions</title>
+  <meta name="description" content="AGRIGROW combines technology, data, and expertise to help farmers increase yield, reduce waste, and build a better future with precision agriculture and AI crop monitoring.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="showcase-mode">
+
+  
 
       <!-- Navigation Header -->
       <header class="site-header" id="siteHeader">
         <div class="container nav-container">
-          <a href="index.html" class="brand-logo" aria-label="Anti Homepage">
+          <a href="index.html" class="brand-logo" aria-label="AGRIGROW Homepage">
             <span class="logo-icon-wrap">
-              <img src="/IMAGES/logo.png" alt="AGRIGROW">
+              <img src="IMAGES/logo.png" alt="AGRIGROW Logo">
             </span>
-            <span class="brand-name">AGRI GROW</span>
+            <span class="brand-name">AGRIGROW</span>
           </a>
 
           <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
@@ -101,7 +103,7 @@
 
               <h1 class="hero-title">
                 Innovating Today<br>
-                For  A Sustainable<br>
+                For A Sustainable<br>
                 <span class="text-green">Tomorrow</span>
               </h1>
 
@@ -125,12 +127,13 @@
             <div class="hero-media-wrapper">
               <div class="hero-image-card">
                 <img 
-                  src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=1200&auto=format&fit=crop" 
-                  alt="Modern agronomist and farmer inspecting lush agricultural field with digital tablet and tractor" 
+                  src="IMAGES/hero.jpg" 
+                  alt="Modern agronomist and farmer inspecting lush agricultural field with digital tablet and tractor at sunset" 
                   class="hero-img"
                   loading="eager">
                 <div class="hero-img-gradient-overlay"></div>
                 
+                <!-- Floating Glass Card: Crop Health -->
                 <div class="glass-card crop-health-card">
                   <div class="card-header-small">
                     <span class="card-label">Crop Health</span>
@@ -160,6 +163,7 @@
             </div>
           </div>
 
+          <!-- Bottom 4-Feature Pill Bar -->
           <div class="container hero-feature-bar-container">
             <div class="feature-bar-card">
               <a href="services.html#precision" class="feature-bar-item feature-link">
@@ -254,7 +258,7 @@
                     <path d="M12 22V12M12 12C12 7.02944 7.97056 3 3 3C3 7.97056 7.02944 12 12 12ZM12 12C12 7.02944 16.0294 3 21 3C21 7.97056 16.0294 12 12 12Z"/>
                   </svg>
                 </span>
-                <span class="badge-text">About AGRI GROW</span>
+                <span class="badge-text">About AGRIGROW</span>
               </div>
 
               <h2 class="section-title">
@@ -264,7 +268,7 @@
               </h2>
 
               <p class="section-text">
-                At Agri Grow, we empower farmers with innovative tools and  <br> actionable data to improve productivity, profitability, and sustainability.
+                At AGRIGROW, we empower farmers with innovative tools and actionable data to improve productivity, profitability, and sustainability.
               </p>
 
               <ul class="checklist">
@@ -444,7 +448,7 @@
       </main>
     </div>
 
-    <!-- RIGHT / SECONDARY CONTAINER -->
+    <!-- RIGHT COLUMN (Secondary Presentation Showcase Pane) -->
     <div class="layout-column layout-right" id="layoutRight">
 
       <!-- FROM DATA TO BETTER DECISIONS -->
@@ -612,7 +616,7 @@
               <div class="testimonial-slide active" data-index="0">
                 <div class="quote-mark">“</div>
                 <p class="quote-text">
-                  Agri Grow solutions helped us increase our yield by 30% while reducing water usage significantly.
+                  AGRIGROW solutions helped us increase our yield by 30% while reducing water usage significantly.
                 </p>
                 <div class="author-layout">
                   <div class="author-info">
@@ -803,7 +807,7 @@
             <div class="footer-col brand-col">
               <a href="index.html" class="brand-logo footer-brand">
                 <span class="logo-icon-wrap">
-                 <img src="/IMAGES/logo.png" alt="AGRIGROW">
+                  <img src="IMAGES/logo.png" alt="AGRIGROW">
                 </span>
                 <span class="brand-name">AGRIGROW</span>
               </a>
@@ -860,7 +864,7 @@
           </div>
 
           <div class="footer-bottom">
-            <p class="copyright">© 2024 Agri Grow. All rights reserved.</p>
+            <p class="copyright">© 2024 AGRIGROW. All rights reserved.</p>
             <div class="legal-links">
               <a href="#">Privacy Policy</a>
               <span class="legal-divider">|</span>
@@ -907,5 +911,111 @@
       </div>
     </div>
   </div>
- </body>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    // View Mode Switcher
+    function setViewMode(mode) {
+      const body = document.body;
+      const btnShowcase = document.getElementById('btnShowcaseView');
+      const btnFull = document.getElementById('btnFullView');
+      
+      if (mode === 'showcase') {
+        body.classList.add('showcase-mode');
+        btnShowcase.classList.add('active');
+        btnFull.classList.remove('active');
+      } else {
+        body.classList.remove('showcase-mode');
+        btnFull.classList.add('active');
+        btnShowcase.classList.remove('active');
+      }
+    }
+
+    // Testimonial Carousel
+    const slides = document.querySelectorAll('.testimonial-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    const prevBtn = document.getElementById('prevTestimonial');
+    const nextBtn = document.getElementById('nextTestimonial');
+
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      });
+    }
+
+    // Video Modal
+    const videoModal = document.getElementById('videoModal');
+    const modalIframe = document.getElementById('modalIframe');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+    const videoTriggers = document.querySelectorAll('.video-trigger');
+
+    videoTriggers.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modalIframe.src = 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1';
+        videoModal.classList.add('open');
+      });
+    });
+
+    if (modalCloseBtn) {
+      modalCloseBtn.addEventListener('click', () => {
+        videoModal.classList.remove('open');
+        modalIframe.src = '';
+      });
+    }
+
+    // Search Modal
+    const searchModal = document.getElementById('searchModal');
+    const searchBtn = document.getElementById('searchBtn');
+    const searchCloseBtn = document.getElementById('searchCloseBtn');
+
+    if (searchBtn && searchModal) {
+      searchBtn.addEventListener('click', () => {
+        searchModal.classList.add('open');
+        setTimeout(() => document.getElementById('searchInput')?.focus(), 100);
+      });
+    }
+
+    if (searchCloseBtn && searchModal) {
+      searchCloseBtn.addEventListener('click', () => {
+        searchModal.classList.remove('open');
+      });
+    }
+
+    // Close Modals on background click
+    [videoModal, searchModal].forEach(modal => {
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.remove('open');
+            if (modalIframe) modalIframe.src = '';
+          }
+        });
+      }
+    });
+
+    // Mobile Hamburger Navigation
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mainNav = document.getElementById('mainNav');
+
+    if (hamburgerBtn && mainNav) {
+      hamburgerBtn.addEventListener('click', () => {
+        mainNav.classList.toggle('mobile-open');
+        hamburgerBtn.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
 </html>
