@@ -857,7 +857,8 @@
                 </li>
                 <li>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                  <span>123 Green Field Road, Agri City, AG 12345</span>
+                  <span>23,Green Field Road, Agri City, AG 23
+                  </span>
                 </li>
               </ul>
             </div>
@@ -911,111 +912,5 @@
       </div>
     </div>
   </div>
-
-  <!-- Interactive JavaScript -->
-  <script>
-    // View Mode Switcher
-    function setViewMode(mode) {
-      const body = document.body;
-      const btnShowcase = document.getElementById('btnShowcaseView');
-      const btnFull = document.getElementById('btnFullView');
-      
-      if (mode === 'showcase') {
-        body.classList.add('showcase-mode');
-        btnShowcase.classList.add('active');
-        btnFull.classList.remove('active');
-      } else {
-        body.classList.remove('showcase-mode');
-        btnFull.classList.add('active');
-        btnShowcase.classList.remove('active');
-      }
-    }
-
-    // Testimonial Carousel
-    const slides = document.querySelectorAll('.testimonial-slide');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-      });
-    }
-
-    const prevBtn = document.getElementById('prevTestimonial');
-    const nextBtn = document.getElementById('nextTestimonial');
-
-    if (prevBtn && nextBtn) {
-      prevBtn.addEventListener('click', () => {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-      });
-
-      nextBtn.addEventListener('click', () => {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-      });
-    }
-
-    // Video Modal
-    const videoModal = document.getElementById('videoModal');
-    const modalIframe = document.getElementById('modalIframe');
-    const modalCloseBtn = document.getElementById('modalCloseBtn');
-    const videoTriggers = document.querySelectorAll('.video-trigger');
-
-    videoTriggers.forEach(btn => {
-      btn.addEventListener('click', () => {
-        modalIframe.src = 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1';
-        videoModal.classList.add('open');
-      });
-    });
-
-    if (modalCloseBtn) {
-      modalCloseBtn.addEventListener('click', () => {
-        videoModal.classList.remove('open');
-        modalIframe.src = '';
-      });
-    }
-
-    // Search Modal
-    const searchModal = document.getElementById('searchModal');
-    const searchBtn = document.getElementById('searchBtn');
-    const searchCloseBtn = document.getElementById('searchCloseBtn');
-
-    if (searchBtn && searchModal) {
-      searchBtn.addEventListener('click', () => {
-        searchModal.classList.add('open');
-        setTimeout(() => document.getElementById('searchInput')?.focus(), 100);
-      });
-    }
-
-    if (searchCloseBtn && searchModal) {
-      searchCloseBtn.addEventListener('click', () => {
-        searchModal.classList.remove('open');
-      });
-    }
-
-    // Close Modals on background click
-    [videoModal, searchModal].forEach(modal => {
-      if (modal) {
-        modal.addEventListener('click', (e) => {
-          if (e.target === modal) {
-            modal.classList.remove('open');
-            if (modalIframe) modalIframe.src = '';
-          }
-        });
-      }
-    });
-
-    // Mobile Hamburger Navigation
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const mainNav = document.getElementById('mainNav');
-
-    if (hamburgerBtn && mainNav) {
-      hamburgerBtn.addEventListener('click', () => {
-        mainNav.classList.toggle('mobile-open');
-        hamburgerBtn.classList.toggle('active');
-      });
-    }
-  </script>
 </body>
 </html>
